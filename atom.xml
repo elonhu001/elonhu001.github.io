@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Elon&#39;s Blog</title>
+  <icon>https://www.gravatar.com/avatar/da2a31f80eb8bc5c406ea77514ec1585</icon>
+  <subtitle>Life-long learning</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-10-11T15:28:38.901Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Elon Hu</name>
+    <email>768659569@qq.com</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test_my_site</title>
+    <link href="http://yoursite.com/2018/10/11/test-my-site/"/>
+    <id>http://yoursite.com/2018/10/11/test-my-site/</id>
+    <published>2018-10-11T15:28:38.000Z</published>
+    <updated>2018-10-11T15:28:38.901Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2018/10/11/hello-world/"/>
+    <id>http://yoursite.com/2018/10/11/hello-world/</id>
+    <published>2018-10-11T15:14:08.607Z</published>
+    <updated>2018-10-12T09:58:39.155Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><hr>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
