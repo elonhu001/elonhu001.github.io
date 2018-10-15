@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-10-11T15:28:38.901Z</updated>
+  <updated>2018-10-15T03:56:48.656Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,37 +17,25 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>test_my_site</title>
-    <link href="http://yoursite.com/2018/10/11/test-my-site/"/>
-    <id>http://yoursite.com/2018/10/11/test-my-site/</id>
-    <published>2018-10-11T15:28:38.000Z</published>
-    <updated>2018-10-11T15:28:38.901Z</updated>
+    <title>Notes about STM32</title>
+    <link href="http://yoursite.com/2018/10/15/Notes-about-STM32/"/>
+    <id>http://yoursite.com/2018/10/15/Notes-about-STM32/</id>
+    <published>2018-10-15T02:09:31.000Z</published>
+    <updated>2018-10-15T03:56:48.656Z</updated>
     
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2018/10/11/hello-world/"/>
-    <id>http://yoursite.com/2018/10/11/hello-world/</id>
-    <published>2018-10-11T15:14:08.607Z</published>
-    <updated>2018-10-12T09:58:39.155Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><hr>]]></content>
+    <content type="html"><![CDATA[<p>​ This is my first note in this blog space, I will recording some skills and something that require special attention when I was doing embedded projects. </p><hr><ol>  <li>    <p>Recommend a good MCU learning website <a href="http://www.waveshare.net/study/portal.php" target="_blank" rel="noopener">《微雪课堂》</a></p>  </li>  <li>    <p>If you want to calculate the size of a string you can use the following method</p>    <figure class="highlight plain">      <table>        <tr>          <td class="gutter">            <pre><span class="line">1</span><br><span class="line">2</span><br></pre>          </td>          <td class="code">            <pre><span class="line">#define COUNTOF(__BUFFER__)   (sizeof(__BUFFER__) / sizeof(*(__BUFFER__)))</span><br><span class="line">HAL_UART_Transmit(&amp;huart6, ch1, (COUNTOF(ch1) - 1), 55);</span><br></pre>          </td>        </tr>      </table>    </figure>  </li>  <li>    <p>We can use sprintf() to combine different strings or numbers into on string, this string should be in a arry with char type. Besides, we can whatch this artical <a href="http://blog.xuite.net/jesonchung/scienceview/93558472-sprintf%E7%94%A8%E6%B3%95%E8%A7%A3%E6%9E%90" target="_blank" rel="noopener">The different uses of sprintf()</a></p>    <figure class="highlight plain">      <table>        <tr>          <td class="gutter">            <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre>          </td>          <td class="code">            <pre><span class="line">sprintf(buf, &quot;CH1: %4d  CH2: %4d  CH3: %4d  CH4: %4d  SW1: %1d  SW2: %1d \n&quot;, rc.ch1, rc.ch2, rc.ch3, rc.ch4, rc.sw1, rc.sw2);</span><br><span class="line">HAL_UART_Transmit(&amp;huart6, (uint8_t *)buf, (COUNTOF(buf) - 1), 55);</span><br><span class="line">HAL_Delay(50);</span><br></pre>          </td>        </tr>      </table>    </figure>  </li>  <li>    <p>STM32_UART_DMA_IDLE, If we want to use DMA and IDLE to recive data then we should open the IDLE interrupt and DMA reciver, what should noticed is that we can’t open the reciver interrupt of UART or it will always interrupt when reciving data. If UART don’t recive data for a moment time, which is the detection time of IDLE interrupt, then the timer will be shut down and the recive completion flag will be positioned, too.</p>    <p>About STM32_UART_DMA_IDLE we can read the following artical</p>    <blockquote>      <p><a href="http://www.eeworld.com.cn/mcu/article_2017100234926.html" target="_blank" rel="noopener">《STM32 USART串口DMA接收和发送模式》</a></p>      <p><a href="http://blog.chinaaet.com/weiqi7777/p/44283" target="_blank" rel="noopener">《STM32使用DMA加串口空闲中断接收数据》</a> Note: This one is well</p>      <p><a href="http://www.stmcu.org.cn/module/forum/thread-602761-1-1.html" target="_blank" rel="noopener">《Cube下实现串口+DMA+空闲中断接收不定长数据》</a></p>      <p><a href="https://www.jianshu.com/p/2aad70a49ef7" target="_blank" rel="noopener">《关于STM32空闲中断》</a></p>    </blockquote>  </li>  <li>    <p>How to config the CAN communication with STM32CubeMX. There are few points need to be noted.</p>    <p>About STM32_CAN I will make a detailed record later.</p>    <ol>      <li>        <p><strong>Baud rate.</strong> If your HCLK is 180, you can config Prescaler to 5, Time Quanta in Bit Segment 1 to 3 times, Time Quanta in Bit Segment 2 to 5 times and ReSynchronization Jump With to 1 time </p>      </li>      <li>        <p><strong>NVIC settings.</strong> Don’t forget to config the CAN_TX and CAN_RX interrupts, on this step, you will see two RX interrupts, RX0 and RX1, case CAN reciver contains two recive mailbox, we can associate the can reciver what we used with one of them.</p>      </li>      <li>        <p><strong>Filter setting.</strong> About this part I recommend this artical 《》</p>      </li>      <li>        <p><strong>Recive &amp; Send.</strong> This part is a little different between old version library and new version library(after v1.20), we can refrence the demo of HAL library. </p>      </li>      <li>        <p>There are some articals about CAN communication, which explained well.</p>        <blockquote>          <p><a href="http://www.waveshare.net/study/article-651-1.html" target="_blank" rel="noopener">《微雪课堂-STM32CubeMX系列教程12:控制器局域网络(CAN)》</a></p>          <p><a href="https://blog.csdn.net/flydream0/article/details/8148791" target="_blank" rel="noopener">《STM32之CAN – CAN ID过滤器分析》</a></p>          <p><a href="https://blog.csdn.net/flydream0/article/details/52317532" target="_blank" rel="noopener">《再谈STM32的CAN过滤器-bxCAN的过滤器的4种工作模式以及使用方法总结》</a> </p>        </blockquote>      </li>    </ol>  </li></ol>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+        &lt;p&gt;​ This is my first note in this blog space, I will recording some skills and something that require special attention when I was doing em
       
     
     </summary>
     
+    
+      <category term="Embedded" scheme="http://yoursite.com/tags/Embedded/"/>
     
   </entry>
   
