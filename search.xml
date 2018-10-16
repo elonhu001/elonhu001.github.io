@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[How to Build Your Perdonal Website with Github and Hexo]]></title>
-    <url>%2F2018%2F10%2F16%2FHow-to-Build-Your-Perdonal-Website-with-Github-and-Hexo%2F</url>
+    <title><![CDATA[How to Build Your Personal Website with Github and Hexo]]></title>
+    <url>%2F2018%2F10%2F16%2FHow-to-Build-Your-Personal-Website-with-Github-and-Hexo%2F</url>
     <content type="text"><![CDATA[​ This is my first blog in this space, I want to record how I build my blog website. My blog is besed on Hexo which hosted on Github. What is Hexo? ​ Before we started, I’m going to talk something about Hexo. Hexo is a static blog framework which besed on Node.js, it has no so much depend on and very convenient for useing. It can generate static web pages and host them on Github or Heroku. meanwhile, Hexo is also a open source project on Github – hexojs/hexo. If you want to learn more about Hexo, you can go to the official website of Hexo. I don’t want talk too much, so let’s get started.(In fact, I don’t know what to say, ha ha ha…) (Unfinished…)]]></content>
       <tags>
         <tag>Internet</tag>
