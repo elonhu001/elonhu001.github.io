@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-10-16T07:53:17.200Z</updated>
+  <updated>2018-10-16T02:34:27.404Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,30 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>How to Build Your Personal Website with Github and Hexo</title>
-    <link href="http://yoursite.com/2018/10/16/How-to-Build-Your-Personal-Website-with-Github-and-Hexo/"/>
-    <id>http://yoursite.com/2018/10/16/How-to-Build-Your-Personal-Website-with-Github-and-Hexo/</id>
-    <published>2018-10-16T01:17:10.000Z</published>
-    <updated>2018-10-16T07:53:17.200Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="http://i4.bvimg.com/664948/37baa8a0ef116dc3.png" alt="Markdown"></p><p>​ This is my first blog in this space, I want to record how I build my blog website. My blog is besed on Hexo which hosted on Github.</p><p>What is Hexo?</p><p><img src="http://i4.bvimg.com/664948/f4759fb81d26e542.png" alt="Markdown"></p><p>​ Before we started, I’m going to talk something about Hexo. Hexo is a static blog framework which besed on Node.js, it has no so much depend on and very convenient for useing. It can generate static web pages and host them on Github or Heroku. meanwhile, Hexo is also a open source project on Github – <a href="https://link.zhihu.com/?target=https%3A//github.com/hexojs/hexo" target="_blank" rel="noopener">hexojs/hexo</a>. If you want to learn more about Hexo, you can go to the official website of <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a>.As for Github, I think you can no longer be familiar with it, so I will not talk too much on this part, but if you want to learn more about Git, I recommend this aitical – <a href="https://www.cnblogs.com/tugenhua0707/p/4050072.html" target="_blank" rel="noopener">《Git使用教程》</a>. </p><p>I don’t want talk too much, so let’s get started.(In fact, I don’t know what to say, ha ha ha…)</p><p><strong>(Unfinished…)</strong></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;img src=&quot;http://i4.bvimg.com/664948/37baa8a0ef116dc3.png&quot; alt=&quot;Markdown&quot;&gt;&lt;/p&gt;
-&lt;p&gt;​ This is my first blog in this space, I want to record
-      
-    
-    </summary>
-    
-    
-      <category term="Internet" scheme="http://yoursite.com/tags/Internet/"/>
-    
-  </entry>
   
   <entry>
     <title>Notes about STM32</title>
@@ -61,6 +37,30 @@
     
     
       <category term="Embedded" scheme="http://yoursite.com/tags/Embedded/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>How to Build Your Personal Website with Github and Hexo</title>
+    <link href="http://yoursite.com/2018/10/14/How-to-Build-Your-Personal-Website-with-Github-and-Hexo/"/>
+    <id>http://yoursite.com/2018/10/14/How-to-Build-Your-Personal-Website-with-Github-and-Hexo/</id>
+    <published>2018-10-14T01:17:10.000Z</published>
+    <updated>2018-10-16T15:37:57.853Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://i4.bvimg.com/664948/37baa8a0ef116dc3.png" alt="Markdown"></p><p>​ This is my first blog in this space, I want to record how I build my blog website. My blog is besed on Hexo which hosted on Github.</p><p>What is Hexo?</p><p><img src="http://i4.bvimg.com/664948/f4759fb81d26e542.png" alt="Markdown"></p><p>​ Before we started, I’m going to talk something about Hexo. Hexo is a static blog framework which besed on Node.js, it has no so much depend on and very convenient for useing. It can generate static web pages and host them on Github or Heroku. meanwhile, Hexo is also a open source project on Github – <a href="https://link.zhihu.com/?target=https%3A//github.com/hexojs/hexo" target="_blank" rel="noopener">hexojs/hexo</a>. If you want to learn more about Hexo, you can go to the official website of <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a>.As for Github, I think you can no longer be familiar with it, so I will not talk too much on this part, but if you want to learn more about Git, I recommend this aitical – <a href="https://www.cnblogs.com/tugenhua0707/p/4050072.html" target="_blank" rel="noopener">《Git使用教程》</a>. </p><p>I don’t want talk too much, so let’s get started.(In fact, I don’t know what to say, ha ha ha…)</p><p><strong>(Unfinished…)</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;http://i4.bvimg.com/664948/37baa8a0ef116dc3.png&quot; alt=&quot;Markdown&quot;&gt;&lt;/p&gt;
+&lt;p&gt;​ This is my first blog in this space, I want to record
+      
+    
+    </summary>
+    
+    
+      <category term="Internet" scheme="http://yoursite.com/tags/Internet/"/>
     
   </entry>
   
