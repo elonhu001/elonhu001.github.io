@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-10-15T03:56:48.656Z</updated>
+  <updated>2018-10-16T01:50:08.068Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>How to Build Your Perdonal Website with Github and Hexo</title>
+    <link href="http://yoursite.com/2018/10/16/How-to-Build-Your-Perdonal-Website-with-Github-and-Hexo/"/>
+    <id>http://yoursite.com/2018/10/16/How-to-Build-Your-Perdonal-Website-with-Github-and-Hexo/</id>
+    <published>2018-10-16T01:17:10.000Z</published>
+    <updated>2018-10-16T01:50:08.068Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="" alt="http://i4.bvimg.com/664948/37baa8a0ef116dc3.png"></p><p>​ This is my first blog in this space, I want to record how I build my blog website. My blog is besed on Hexo which hosted on Github.</p><p>What is Hexo?</p><p><img src="" alt="http://i4.bvimg.com/664948/f4759fb81d26e542.png"></p><p>Before we started, I’m going to talk something about Hexo. Hexo is a static blog framework which besed on Node.js, it has no so much depend on and very convenient for useing. It can generate static web pages and host them on Github or Heroku. meanwhile, Hexo is also a open source project on Github – <a href="https://link.zhihu.com/?target=https%3A//github.com/hexojs/hexo" target="_blank" rel="noopener">hexojs/hexo</a>. If you want to learn more about Hexo, you can go to the official website of <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a>.</p><p>I don’t want talk too much, so let’s get started.(In fact, I don’t know what to say, ha ha ha…)</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;http://i4.bvimg.com/664948/37baa8a0ef116dc3.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;​ This is my first blog in this space, I want to record how I b
+      
+    
+    </summary>
+    
+    
+      <category term="Internet" scheme="http://yoursite.com/tags/Internet/"/>
+    
+  </entry>
   
   <entry>
     <title>Notes about STM32</title>
