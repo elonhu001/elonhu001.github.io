@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/about/index.html</loc>
+    
+    <lastmod>2018-10-21T15:06:45.068Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/archives/index.html</loc>
+    
+    <lastmod>2018-10-21T15:06:11.863Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/schedule/index.html</loc>
+    
+    <lastmod>2018-10-21T15:05:48.183Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/sitemap/index.html</loc>
+    
+    <lastmod>2018-10-21T15:05:11.462Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2018/10/21/How-to-download-videos-on-web-pages/</loc>
     
     <lastmod>2018-10-21T14:57:43.661Z</lastmod>
@@ -11,7 +39,7 @@
   <url>
     <loc>http://yoursite.com/2018/10/14/How-to-Build-Your-Personal-Website-with-Github-and-Hexo/</loc>
     
-    <lastmod>2018-10-21T14:50:16.817Z</lastmod>
+    <lastmod>2018-10-21T14:56:23.261Z</lastmod>
     
   </url>
   
