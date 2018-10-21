@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-10-20T13:34:06.242Z</updated>
+  <updated>2018-10-21T13:37:01.288Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>How_to_download_videos_on_web_pages</title>
+    <link href="http://yoursite.com/2018/10/21/How-to-download-videos-on-web-pages/"/>
+    <id>http://yoursite.com/2018/10/21/How-to-download-videos-on-web-pages/</id>
+    <published>2018-10-21T12:25:07.000Z</published>
+    <updated>2018-10-21T13:37:01.288Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Have you ever met this kind of situation, you are watching a short video which is very intresting that you want to dowload it, but you
+        
+      
+    
+    </summary>
+    
+      <category term="Internet" scheme="http://yoursite.com/categories/Internet/"/>
+    
+    
+      <category term="Internet" scheme="http://yoursite.com/tags/Internet/"/>
+    
+  </entry>
   
   <entry>
     <title>Notes about STM32</title>
