@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[How_to_download_videos_on_web_pages]]></title>
+    <title><![CDATA[How to Download Videos on Web Pages]]></title>
     <url>%2F2018%2F10%2F21%2FHow-to-download-videos-on-web-pages%2F</url>
     <content type="text"><![CDATA[Have you ever met this kind of situation, you are watching a short video which is very intresting that you want to dowload it, but you can’t find the download button. Today I am going to teach you a method which can dowload the videos on web pages. First, you need to open the “developer tools”, it will be find on the upper right corner for most browsers. Take google browser for example, you will find it according to the picture below. Then according to the arrows in the below picture, select “network” —- select “filter” —- write “.mp4” in the searching box —- right click mouse on the .mp4 file —- open in new tab Now, you will find the new tab is playing the video that you want to download, left click the button on the bottom right corner as the picture below, here you are, you will find the download button. For youtube channel you can check this method. Copy the link of youtube video and input it in a new tab. Add “1s” after youtube in the link and push “Enter” key on your keyboard, for example, your video link is https://www.youtube.com/watch?v=HPQbKTJPsU4, after you added “1s” it should be like this https://www.youtube1s.com/watch?v=HPQbKTJPsU4. You will find you can download the video or audio and you can choose different formats and different clarity.]]></content>
       <categories>
