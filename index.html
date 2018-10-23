@@ -1027,7 +1027,7 @@
                       <li>
                         <p>Push your blog website</p>
                         <p>This step is to push your website to Github, then it will be hosted by Github, when you finished this step, you can enter your website in a browser with this address: <u><em>your_account_name _of_github.github.io</em></u>.</p>
-                        <p>Now, please open the site configuration file, it is on this directory: <em><u>/Blog/_config.yml</u></em>. Open it and turn to the end, you will see the “deploy configration options”, you can modify it like the following.</p>
+                        <p>Now, please open the site configuration file, it is on this directory: <em><u>Blog/_config.yml</u></em>. Open it and turn to the end, you will see the “deploy configration options”, you can modify it like the following.</p>
                         <figure class="highlight plain">
                           <table>
                             <tr>
@@ -1086,6 +1086,28 @@
                         <p>Edit record as the picture below. The value is the repository address you created before.</p>
                         <center><br><img src="https://github.com/elonhu001/my_blog_images/blob/master/1_build_blog/9.png?raw=true" width="100%" height="100%"><br></center>
 
+                        <p>Then you need to login your Github again, and enter the repository you created before, click setting to set your domain name and save it.</p>
+                        <center><br><img src="https://github.com/elonhu001/my_blog_images/blob/master/1_build_blog/9.jpg?raw=true" width="100%" height="100%"><br></center>
+
+                        <center><br><img src="https://github.com/elonhu001/my_blog_images/blob/master/1_build_blog/10.jpg?raw=true" width="100%" height="100%"><br></center>
+
+                        <p>Now, you need to enter this directory: <u><em>Blog\source</em></u> , and creat a file, input your domain name in it with or without <u>www</u>, name it as <u>CNAME</u>, and save it as all files.</p>
+                        <center><br><img src="https://github.com/elonhu001/my_blog_images/blob/master/1_build_blog/11.jpg?raw=true" width="100%" height="100%"><br></center>
+
+                        <p>Then use the following command to update and deploy your blog.</p>
+                        <figure class="highlight plain">
+                          <table>
+                            <tr>
+                              <td class="gutter">
+                                <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre>
+                              </td>
+                              <td class="code">
+                                <pre><span class="line">hexo clean </span><br><span class="line">hexo g </span><br><span class="line">hexo d</span><br></pre>
+                              </td>
+                            </tr>
+                          </table>
+                        </figure>
+                        <p>After you down all these things above, you can enter your blog website with your own domain name.</p>
                       </li>
                     </ol>
                     <p><strong>(Unfinished…)</strong></p>
