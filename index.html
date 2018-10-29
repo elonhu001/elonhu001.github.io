@@ -741,6 +741,33 @@
                         </blockquote>
                       </li>
                       <li>
+                        <p>The when a peripheral interrupt had came, he periphral interrupt will be shut down, so you should turn on it again in the interrupt callback function.</p>
+                      </li>
+                      <li>
+                        <p>If you don’t know the meaning of the Options for target in KEIL, don’t know how to config it, then you can chek this artical<a href="https://blog.csdn.net/ybhuangfugui/article/details/53131141" target="_blank" rel="noopener">《工程目标选项配置》</a></p>
+                      </li>
+                      <li>
+                        <p>If you had used an RTOS on your MCU, then you need to pay attention to those can’t be interrupted parts, like copy data from FIFO to Buffer or creat a new thread, you should put them into critical region with the following code.</p>
+                        <figure class="highlight plain">
+                          <table>
+                            <tr>
+                              <td class="gutter">
+                                <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre>
+                              </td>
+                              <td class="code">
+                                <pre><span class="line">taskENTER_CRITICAL();</span><br><span class="line">/* Here is the code that can&apos;t be interrupted.*/</span><br><span class="line">taskEXIT_CRITICAL();</span><br></pre>
+                              </td>
+                            </tr>
+                          </table>
+                        </figure>
+                      </li>
+                      <li>
+                        <p>There is a good way to handle message in an RTOS, you can pack a message into FIFO then set a semaphore to another thread which is specially for sending message, also, you can set a semaphore after received a message and wait for another thread which is specially for unpacking message.</p>
+                      </li>
+                      <li>
+                        <p>If you want to check a button with your MCU, please don’t use external interrupt, because external interrupts are subtle level while push a button is about 20ms, in this about 20ms, the voltage will fluctuate, so it may be triggered for several times in this time. About this problem, I alwas use polling method, creating a thread to check all buttons specially, the cycle is 10ms, this is very useful, because this 10ms’ cycle is a kind of filter.</p>
+                      </li>
+                      <li>
                         <p>How to config the CAN communication with STM32CubeMX. There are few points need to be noted.</p>
                         <p>About STM32_CAN I will make a detailed record later.</p>
                         <ol>

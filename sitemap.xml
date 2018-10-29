@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2018/10/15/Notes-about-STM32/</loc>
+    
+    <lastmod>2018-10-29T13:59:02.076Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2018/10/14/How-to-Build-Your-Personal-Website-with-Github-and-Hexo/</loc>
     
     <lastmod>2018-10-28T15:28:44.720Z</lastmod>
@@ -54,13 +61,6 @@
     <loc>http://yoursite.com/404.html</loc>
     
     <lastmod>2018-10-20T13:44:56.598Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/10/15/Notes-about-STM32/</loc>
-    
-    <lastmod>2018-10-20T13:34:06.242Z</lastmod>
     
   </url>
   
