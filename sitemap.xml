@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2018/10/14/How-to-Build-Your-Personal-Website-with-Github-and-Hexo/</loc>
+    
+    <lastmod>2018-11-02T15:06:08.453Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2018/10/15/Notes-about-STM32/</loc>
     
     <lastmod>2018-11-02T15:01:51.109Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>http://yoursite.com/2018/10/21/How-to-download-videos-on-web-pages/</loc>
     
     <lastmod>2018-11-02T15:01:14.969Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/10/14/How-to-Build-Your-Personal-Website-with-Github-and-Hexo/</loc>
-    
-    <lastmod>2018-11-02T14:06:58.255Z</lastmod>
     
   </url>
   
