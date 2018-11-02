@@ -134,7 +134,7 @@
   <meta property="og:site_name" content="Elon&#39;s Blog">
   <meta property="og:description" content="​ On this note, I’m going to record some skills and something that require special attention when I was doing embedded projects.           《STM Community》           Recommend a good MCU learning websi">
   <meta property="og:locale" content="en">
-  <meta property="og:updated_time" content="2018-10-29T13:59:02.076Z">
+  <meta property="og:updated_time" content="2018-11-02T14:42:02.100Z">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Notes about STM32">
   <meta name="twitter:description" content="​ On this note, I’m going to record some skills and something that require special attention when I was doing embedded projects.           《STM Community》           Recommend a good MCU learning websi">
@@ -515,7 +515,7 @@
                         </figure>
                       </li>
                       <li>
-                        <p>We can use sprintf() to combine different strings or numbers into on string, this string should be in a arry with char type. Besides, we can whatch this artical <a href="http://blog.xuite.net/jesonchung/scienceview/93558472-sprintf%E7%94%A8%E6%B3%95%E8%A7%A3%E6%9E%90" target="_blank" rel="noopener">The different uses of sprintf()</a></p>
+                        <p>We can use sprintf() to combine different strings or numbers into one string, this string should be in an arry with char type. Besides, we can turn to this artical <a href="http://blog.xuite.net/jesonchung/scienceview/93558472-sprintf%E7%94%A8%E6%B3%95%E8%A7%A3%E6%9E%90" target="_blank" rel="noopener">The different uses of sprintf()</a></p>
                         <figure class="highlight plain">
                           <table>
                             <tr>
@@ -530,8 +530,8 @@
                         </figure>
                       </li>
                       <li>
-                        <p>STM32_UART_DMA_IDLE, If we want to use DMA and IDLE to recive data then we should open the IDLE interrupt and DMA reciver, what should noticed is that we can’t open the reciver interrupt of UART or it will always interrupt when reciving data. If UART don’t recive data for a moment time, which is the detection time of IDLE interrupt, then the timer will be shut down and the recive completion flag will be positioned, too.</p>
-                        <p>About STM32_UART_DMA_IDLE we can read the following artical</p>
+                        <p>STM32_UART_DMA_IDLE, If we want to use DMA and IDLE to receive data, then we should open the IDLE interrupt and DMA reciver, what should be noticed is that we can’t open the receiver interrupt of UART or it will always interrupt when receiving data. If UART don’t recive data for a moment, which is the detection time of IDLE interrupt, then the timer will be shut down and the receive completion flag will be positioned, too.</p>
+                        <p>About STM32_UART_DMA_IDLE we can read the following article</p>
                         <blockquote>
                           <p><a href="http://www.eeworld.com.cn/mcu/article_2017100234926.html" target="_blank" rel="noopener">《STM32 USART串口DMA接收和发送模式》</a></p>
                           <p><a href="http://blog.chinaaet.com/weiqi7777/p/44283" target="_blank" rel="noopener">《STM32使用DMA加串口空闲中断接收数据》</a> Note: This one is well</p>
@@ -540,10 +540,10 @@
                         </blockquote>
                       </li>
                       <li>
-                        <p>The when a peripheral interrupt had came, he periphral interrupt will be shut down, so you should turn on it again in the interrupt callback function.</p>
+                        <p>The when a peripheral interrupt had come, the periphral interrupt will be shut down, so you should turn on it again in the interrupt callback function.</p>
                       </li>
                       <li>
-                        <p>If you don’t know the meaning of the Options for target in KEIL, don’t know how to config it, then you can chek this artical<a href="https://blog.csdn.net/ybhuangfugui/article/details/53131141" target="_blank" rel="noopener">《工程目标选项配置》</a></p>
+                        <p>If you don’t know the meaning of the Options for target in KEIL, and how to config it, then you can chek this article<a href="https://blog.csdn.net/ybhuangfugui/article/details/53131141" target="_blank" rel="noopener">《工程目标选项配置》</a></p>
                       </li>
                       <li>
                         <p>If you had used an RTOS on your MCU, then you need to pay attention to those can’t be interrupted parts, like copy data from FIFO to Buffer or creat a new thread, you should put them into critical region with the following code.</p>
@@ -561,10 +561,10 @@
                         </figure>
                       </li>
                       <li>
-                        <p>There is a good way to handle message in an RTOS, you can pack a message into FIFO then set a semaphore to another thread which is specially for sending message, also, you can set a semaphore after received a message and wait for another thread which is specially for unpacking message.</p>
+                        <p>There is a good way to handle message in a RTOS, you can pack a message into FIFO and then set a semaphore to another thread which is specially for sending messages. You can also set a semaphore after receiving a message and wait for another thread which is specially for unpacking messages.</p>
                       </li>
                       <li>
-                        <p>If you want to check a button with your MCU, please don’t use external interrupt, because external interrupts are subtle level while push a button is about 20ms, in this about 20ms, the voltage will fluctuate, so it may be triggered for several times in this time. About this problem, I alwas use polling method, creating a thread to check all buttons specially, the cycle is 10ms, this is very useful, because this 10ms’ cycle is a kind of filter.</p>
+                        <p>If you want to check a button with your MCU, please don’t use external interrupt, because external interrupts are subtle levels while pushing a button is about 20ms. In this it is about 20ms, the voltage will fluctuate. So it may be triggered for several times in this time. About this problem, I always use polling method, creating a thread to check all buttons specially, the cycle is 10ms, which is very useful because the 10ms’ cycle is a kind of filter.</p>
                       </li>
                       <li>
                         <p>How to config the CAN communication with STM32CubeMX. There are few points need to be noted.</p>
@@ -574,16 +574,16 @@
                             <p><strong>Baud rate.</strong> If your HCLK is 180, you can config Prescaler to 5, Time Quanta in Bit Segment 1 to 3 times, Time Quanta in Bit Segment 2 to 5 times and ReSynchronization Jump With to 1 time </p>
                           </li>
                           <li>
-                            <p><strong>NVIC settings.</strong> Don’t forget to config the CAN_TX and CAN_RX interrupts, on this step, you will see two RX interrupts, RX0 and RX1, case CAN reciver contains two recive mailbox, we can associate the can reciver what we used with one of them.</p>
+                            <p><strong>NVIC settings.</strong> Don’t forget to config the CAN_TX and CAN_RX interrupts, on this step, you will see two RX interrupts, RX0 and RX1, because CAN reciver contains two receiving mailbox, we can associate the receiver with one of them.</p>
                           </li>
                           <li>
-                            <p><strong>Filter setting.</strong> About this part I recommend this artical 《》</p>
+                            <p><strong>Filter setting.</strong> About this part I recommend this article 《》</p>
                           </li>
                           <li>
-                            <p><strong>Recive &amp; Send.</strong> This part is a little different between old version library and new version library(after v1.20), we can refrence the demo of HAL library. </p>
+                            <p><strong>Recive &amp; Send.</strong> This part is a little different from the old version library and new version library(after v1.20), we can refer to the demo of HAL library. </p>
                           </li>
                           <li>
-                            <p>There are some articals about CAN communication, which explained well.</p>
+                            <p>There are some articles about CAN communication, which have explained it well.</p>
                             <blockquote>
                               <p><a href="http://www.waveshare.net/study/article-651-1.html" target="_blank" rel="noopener">《微雪课堂-STM32CubeMX系列教程12:控制器局域网络(CAN)》</a></p>
                               <p><a href="https://blog.csdn.net/flydream0/article/details/8148791" target="_blank" rel="noopener">《STM32之CAN – CAN ID过滤器分析》</a></p>
